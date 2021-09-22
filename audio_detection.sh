@@ -21,3 +21,4 @@ do
        /usr/local/bin/python3 /home/audio_detection/scripts/test.py
        SECONDS=0
 
+done
