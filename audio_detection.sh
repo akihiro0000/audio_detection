@@ -20,5 +20,5 @@ do
    if [$SECONDS -gt 110];then
        /usr/local/bin/python3 /home/audio_detection/scripts/test.py
        SECONDS=0
-
+   fi
 done
