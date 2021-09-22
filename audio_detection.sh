@@ -7,7 +7,7 @@ fi
 SECONDS=0
 /usr/local/bin/python3 /home/audio_detection/scripts/test.py 
 
-while [True]
+while :
 
 do  
     CUDA_VISIBLE_DEVICES=0 /usr/local/bin/python3 /home/audio_detection/pytorch/inference.py audio_tagging \
