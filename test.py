@@ -1,5 +1,6 @@
 import urllib.request
 import json
+import wave
 
 url = 'http://172.17.0.1:8000/audio'
 
