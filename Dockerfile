@@ -46,3 +46,5 @@ RUN apt install -y vim portaudio19-dev
 RUN pip3 install pyaudio
 
 RUN git clone --depth 1 https://github.com/akihiro0000/audio_detection.git
+
+RUN pip3 install fastapi uvicorn
