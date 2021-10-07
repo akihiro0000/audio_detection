@@ -30,7 +30,7 @@ RUN apt-get install -y libhdf5-dev libsndfile1
 RUN pip3 install h5py pandas
 
 
-RUN apt install -y vim portaudio19-dev
+RUN apt install -y vim portaudio19-dev python3-pyaudio
 RUN pip3 install pyaudio
 RUN pip3 install fastapi uvicorn
 
