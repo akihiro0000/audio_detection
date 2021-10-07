@@ -18,3 +18,7 @@ CUDA_VISIBLE_DEVICES=0 python3 pytorch/inference.py audio_tagging     --model_ty
 
 
 jupyter-notebook --port 8888 --ip=0.0.0.0
+
+
+
+wget -O "Cnn14_mAP=0.431.pth" https://zenodo.org/record/3987831/files/Cnn14_mAP%3D0.431.pth?download=1
