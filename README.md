@@ -14,3 +14,7 @@ https://qiita.com/ijufumi/items/badde64d530e6bade382
 
 
 CUDA_VISIBLE_DEVICES=0 python3 pytorch/inference.py audio_tagging     --model_type="Cnn14"     --checkpoint_path="Cnn14_mAP=0.431.pth"     --audio_path="resources/R9_ZSCveAHg_7s.wav"     --cuda
+
+
+
+jupyter-notebook --port 8888 --ip=0.0.0.0
