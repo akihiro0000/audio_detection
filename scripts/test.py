@@ -10,7 +10,7 @@ with urllib.request.urlopen(url) as response:
         for frame in body["frame"]:
                 frames.append(frame.encode("latin-1"))
              
-wavefile = wave.open("./resources/test.wav",'wb')
+wavefile = wave.open("./audio_detection/resources/test.wav",'wb')
 wavefile.setnchannels(1)
 wavefile.setsampwidth(body["sample_size"])
 wavefile.setframerate(44100)
