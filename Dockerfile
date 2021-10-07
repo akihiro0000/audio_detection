@@ -26,25 +26,19 @@ RUN pip3 install matplotlib==3.0.3
 
 WORKDIR /home
 
-
-RUN git clone https://github.com/qiuqiangkong/audioset_tagging_cnn.git
-
-
-WORKDIR /home/audioset_tagging_cnn
-
-RUN CHECKPOINT_PATH="Cnn14_mAP=0.431.pth"
-
-RUN wget -O Cnn14_mAP=0.431.pth https://zenodo.org/record/3987831/files/Cnn14_mAP%3D0.431.pth?download=1
-
-RUN MODEL_TYPE="Cnn14"
-
 RUN apt-get install -y libhdf5-dev libsndfile1
 RUN pip3 install h5py pandas
 
 
 RUN apt install -y vim portaudio19-dev
 RUN pip3 install pyaudio
-
-RUN git clone --depth 1 https://github.com/akihiro0000/audio_detection.git
-
 RUN pip3 install fastapi uvicorn
+
+RUN git clone https://github.com/akihiro0000/audio_detection.git
+
+WORKDIR /home/audio_detection
+
+RUN wget -O "Cnn14_mAP=0.431.pth" https://zenodo.org/record/3987831/files/Cnn14_mAP%3D0.431.pth?download=1
+
+RUN chmod 777 ./scripts/audio_detection.sh
+
